@@ -90,11 +90,26 @@
   cursor: pointer;
 }
 
+@media screen and (max-width:1100px){
+  .container_form{
+    min-height: 80vh;
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (max-width:1000px){
 .container_form {
     margin-top: 0px;
+    min-height: 60vh;
   }
 }
+
+
+@media screen and (max-width:820px){
+  .container_form {
+    min-height: 50vh;
+    }
+  }
 
 @media screen and (max-width:600px){
   .back_title{
@@ -102,6 +117,9 @@
   }
   .front_title{
     font-size: 2.2rem;
+  }
+  .container_form{
+    min-height: 20vh;
   }
 }
 
