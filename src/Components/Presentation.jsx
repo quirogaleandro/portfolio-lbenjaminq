@@ -9,7 +9,6 @@ const Presentation = () => {
   return (
     <Container className={style.container}>
       <div className={style.subcontainer}>
-        <span>Bienvenido, soy </span>
         <h1>Leandro Quiroga</h1>
         <h4>Full stack developer</h4>
         <p>
