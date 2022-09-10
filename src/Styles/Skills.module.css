@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 .container_Skills{
-  height: 90vh;
+  min-height: 90vh;
   margin-bottom: 10%;
   margin-top: 14vh;
   border-bottom: 1px solid white;
