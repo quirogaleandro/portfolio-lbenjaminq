@@ -6,7 +6,7 @@ import style from "../../Styles/Projects.module.css";
 
 function GroupExample() {
   return (
-    <section id='Proyectos' className={style.container_cards}>
+    <section id="Proyectos" className={style.container_cards}>
       <div className={style.card_one}>
         <a href="https://pi-countries-sigma.vercel.app/" target={"blank"}>
           <img
@@ -17,8 +17,7 @@ function GroupExample() {
         </a>
         <h3>Countries app</h3>
         <p>
-          Descripcion del project para que la gente pueda ver de que es lo que
-          trata este preojecto asi es que lo hacemos
+          Single Page Aplication (SPA) para usuarios donde pueden buscar y/o crear actividades en cada país del mundo, filtrar y ordernar los mismos por distintos parámetros.
         </p>
         <div className={style.social_media}>
           <a href="https://github.com/lbenjaminq/PI-Countries" target={"blank"}>
@@ -35,8 +34,8 @@ function GroupExample() {
         </a>
         <h3>B2B Commodities</h3>
         <p>
-          Descripcion del project para que la gente pueda ver de que es lo que
-          trata este preojecto asi es que lo hacemos
+          Foro Online B2B (Bussines to Bussines) para importadores/exportadores de Commodities a nivel internacional. Los usuarios generan “posteos”
+          donde puedan ofrecer/buscar productos.
         </p>
         <div className={style.social_media}>
           <a

@@ -1,11 +1,12 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import okey from '../Images/okey.png'
 import style from '../Styles/SimpleForm.module.css'
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("mwkzvrqy");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <div className={style.send}> <img src={okey}alt='okey' />{"   "}Gracias, te respondere pronto!</div>;
   }
   return (
     <div id="Contacto" className={style.container_form}>

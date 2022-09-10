@@ -68,6 +68,8 @@
 
 .card_one p{
   margin: 2% 2%;
+  font-size: 0.9rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .card_two{
@@ -87,6 +89,8 @@
 
 .card_two p{
   margin: 2% 2%;
+  font-size: 0.9rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .projects{
