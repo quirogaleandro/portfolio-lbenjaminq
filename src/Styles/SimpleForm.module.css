@@ -1,0 +1,99 @@
+.container_form{
+  margin-top: 18vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_form h1{
+  margin-bottom: 10%;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.front_title{
+  z-index: 1;
+  color: white;
+  font-size: 3.2rem;
+}
+
+.back_title{
+  position: absolute;
+  color: rgba(112, 112, 112, 0.06);
+  margin-left: -93%;
+  margin-top: -5%;
+  font-size: 6rem;
+  z-index: -1;
+}
+
+.form{
+  width: 370px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form input{
+  width: 350px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 1.08rem;
+  font-family: sans-serif;
+  padding: 2px 10px;
+}
+
+.form textarea{
+  width: 350px;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding: 14px 10px;
+}
+
+.form button{
+  background-color: rgb(82, 34, 193);
+  color: white;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  padding: 8px 0px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+.container_form {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .back_title{
+    display: none;
+  }
+  .front_title{
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width:400px){
+  .front_title{
+    font-size: 1.8rem;
+  }
+  .form{
+    width: 80%;
+  }
+  .form input{
+    width: 100%;
+  }
+  .form textarea {
+    width: 100%;
+  }
+}

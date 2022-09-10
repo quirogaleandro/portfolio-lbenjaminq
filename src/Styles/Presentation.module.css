@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+  
+.container{
+  max-width: 1180px;
+  min-height: 86vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-left: 0.5%;
+  border-bottom: 1px solid white;
+}
+
+.subcontainer{
+  min-height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subcontainer span{
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: rgb(158, 152, 152);
+}
+.subcontainer h1{
+  font-size: 3.2rem;
+  color: rgb(240, 231, 231);
+  line-height: 80%;
+  font-family: 'Russo One', sans-serif;
+}
+.subcontainer h4{
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: rgb(158, 152, 152);
+}
+.subcontainer p{
+  font-size: 1rem;
+  color: rgb(158, 152, 152);
+  line-height: 115%;
+}
+
+.profile{
+  justify-self: end;
+  width: 400px;
+  height: 380px;
+  object-fit: cover;
+  /* border: 2px solid red; */
+  border-radius: 50%;
+}
+.cv_btn_container{
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 14px auto;
+
+}
+.cv_btn{
+  border: none;
+  width: 180px;
+  height: 50px;
+  padding: 0px 12px;
+  border-radius: 20px;
+  background-color: #6f5adc;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width:1000px){
+  .container{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subcontainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .subcontainer span{
+    margin: 20px;
+  }
+  .subcontainer p{
+    margin: 20px;
+  }
+  .profile{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width:500px){
+  .subcontainer h1{
+    font-size: 2.4rem;
+  }
+  .profile{
+    width: 200px;
+    height: 190px;
+  }
+}
+@media screen and (max-width:350px){
+  .subcontainer h1{
+    font-size: 1.9rem;
+  }
+
+}

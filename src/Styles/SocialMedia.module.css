@@ -1,0 +1,11 @@
+.social{
+  /* border: 2px solid red; */
+  width: 20%;
+  margin-left: 6%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social a img{
+  width: 40px;
+}
+

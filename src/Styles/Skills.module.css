@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.container_Skills{
+  height: 90vh;
+  margin-bottom: 10%;
+  margin-top: 14vh;
+  border-bottom: 1px solid white;
+}
+
+.skills{
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin-bottom: 5% ;
+  font-family: 'Russo One', sans-serif;
+  position: relative;
+}
+
+.front_title{
+  z-index: 1;
+  color: white;
+  font-size: 3.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.back_title{
+  position: absolute;
+  color: rgba(112, 112, 112, 0.06);
+  font-size: 6.5rem;
+  margin-left: -96%;
+  margin-top: -5.6%;
+  z-index: -1;
+  text-align: center;
+}
+
+.container_skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.container_skills img{
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.container_skills div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(121, 107, 107);
+  transition: .6s;
+}
+
+.container_skills div:hover{
+  background-color: #8f81d4;
+}
+
+ /* #1d1d42 #4e2ecf #6fcf97 #ffffff  */
+ /* #1e11a20 #3632c #6f5adc #ffffff */
+
+@media screen and (max-width:1000px){
+  .container_Skills{
+    border: none;
+    min-height: 70vh;
+  }
+}
+
+@media screen and (max-width:600px){
+  .front_title{
+    font-size: 2.2rem;
+  }
+  .back_title{
+    display: none;
+  }
+  .container_Skills{
+    padding: 30px;
+    border: none;
+    margin-bottom: 0;
+    min-height: 70vh;
+    margin-top: 4vh;
+  }
+  .container_skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .container_skills div img{
+    width: 100px;
+  }
+
+}
+
+@media screen and (max-width:405px){
+
+  .front_title{
+    font-size: 2rem;
+  }
+  .container_Skills{
+    padding: 30px;
+    border: none;
+    margin-bottom: 0;
+    height: 105vh;
+    margin-top: 4vh;
+  }
+  .container_skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .container_skills div img{
+    width: 80px;
+    min-height: 80px;
+    margin-bottom: 0px;
+  }
+}
