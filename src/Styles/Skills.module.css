@@ -167,7 +167,7 @@
     padding: 30px;
     border: none;
     margin-bottom: 0;
-    height: 105vh;
+    min-height: 65vh;
     margin-top: 4vh;
   }
   .container_skills{
@@ -189,7 +189,7 @@
     padding: 30px;
     border: none;
     margin-bottom: 0;
-    height: 105vh;
+    min-height: 65vh;
     margin-top: 4vh;
   }
   .container_skills_light{

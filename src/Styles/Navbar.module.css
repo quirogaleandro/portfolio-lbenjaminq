@@ -17,5 +17,26 @@
   background-color: #6f5adc;
   color: white;
 }
+
+.mode{
+  background-color: #715ae3;
+  border-radius: 10px;
+  border: none;
+}
+
+.mode img{
+  width: 30px;
+}
+
+.mode_light{
+  background-color: #715ae3;
+  border-radius: 10px;
+  border: none;
+}
+
+.mode_light img{
+  width: 30px;
+}
+
  /* #1d1d42 #4e2ecf #6fcf97 #ffffff  */
  /* #1e11a20 #3632c #6f5adc #ffffff */

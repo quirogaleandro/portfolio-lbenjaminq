@@ -1,8 +1,8 @@
+import style from "../../Styles/Projects.module.css";
 import CountriesApp from "../../Images/CountriesApp.png";
 import B2B from "../../Images/B2BCommodities.png";
 import githubRepo from "../../Images/githubRepo.png";
 import web from "../../Images/web.png";
-import style from "../../Styles/Projects.module.css";
 
 function GroupExample() {
   return (
@@ -17,7 +17,9 @@ function GroupExample() {
         </a>
         <h3>Countries app</h3>
         <p>
-          Single Page Aplication (SPA) para usuarios donde pueden buscar y/o crear actividades en cada país del mundo, filtrar y ordernar los mismos por distintos parámetros.
+          Single Page Aplication (SPA) para usuarios donde pueden buscar y/o
+          crear actividades en cada país del mundo, filtrar y ordernar los
+          mismos por distintos parámetros.
         </p>
         <div className={style.social_media}>
           <a href="https://github.com/lbenjaminq/PI-Countries" target={"blank"}>
@@ -34,7 +36,8 @@ function GroupExample() {
         </a>
         <h3>B2B Commodities</h3>
         <p>
-          Foro Online B2B (Bussines to Bussines) para importadores/exportadores de Commodities a nivel internacional. Los usuarios generan “posteos”
+          Foro Online B2B (Bussines to Bussines) para importadores/exportadores
+          de Commodities a nivel internacional. Los usuarios generan “posteos”
           donde puedan ofrecer/buscar productos.
         </p>
         <div className={style.social_media}>
