@@ -27,8 +27,7 @@ function App() {
 
   return (
     <div>
-      <Navbar/>
-      <button onClick={handleClick}>CAMBIAR</button>
+      <Navbar handleClick={handleClick} dark={dark}/>
       <Presentation dark={dark} />
       <Projects dark={dark} />
       <Skills dark={dark}/>
