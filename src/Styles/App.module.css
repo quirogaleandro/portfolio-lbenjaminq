@@ -2,10 +2,12 @@
   max-width: 1200px;
   margin: auto;
   color: rgb(183, 176, 176);
+  background: radial-gradient(circle, rgba(29,28,28,1) 0%, rgba(13,12,12,1) 100%)
 }
 
 .ligth{
   max-width: 1200px;
   margin: auto;
   color: rgb(183, 176, 176);
+  background-color: rgb(255, 255, 255);
 }

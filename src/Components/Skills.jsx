@@ -12,18 +12,18 @@ import SEQUELIZE from '../Images/Skills/SEQUELIZE.png'
 import style from '../Styles/Skills.module.css'
 import { Container } from 'react-bootstrap'
 
-const Skills = () => {
+const Skills = ({dark}) => {
   return (
-    <Container id="Skills" className={style.container_Skills}>
+    <Container id="Skills" className={dark ? style.container_Skills : style.container_Skills_light}>
       <h1 className={style.skills}>
-        <span className={style.front_title}>
+        <span className={dark ? style.front_title : style.front_title_light}>
           <span style={{ color: "rgb(82, 34, 193)" }}>TEC</span>NO
           <span style={{ color: "rgb(82, 34, 193)" }}>L</span>OGÍ
           <span style={{ color: "rgb(82, 34, 193)" }}>AS</span>
         </span>
         <span className={style.back_title}>SKILLS</span>
       </h1>
-      <div className={style.container_skills}>
+      <div className={dark ? style.container_skills : style.container_skills_light}>
         <div>
           <img src={HTML} alt="HTML" />
           <span>HTML</span>

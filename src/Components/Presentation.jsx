@@ -5,10 +5,10 @@ import SocialMedia from './SocialMedia';
 import Dowload from '../Images/arrow.png'
 import style from '../Styles/Presentation.module.css'
 
-const Presentation = () => {
+const Presentation = ({dark}) => {
   return (
-    <Container className={style.container}>
-      <div className={style.subcontainer}>
+    <Container className={dark ? style.container : style.container_light}>
+      <div className={dark ? style.subcontainer : style.subcontainer_light }>
         <h1>Leandro Quiroga</h1>
         <h4>Full stack developer</h4>
         <p>

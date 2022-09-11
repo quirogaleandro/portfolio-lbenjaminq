@@ -7,6 +7,13 @@
   border-bottom: 1px solid white;
 }
 
+.container_Skills_light{
+  min-height: 90vh;
+  margin-bottom: 10%;
+  margin-top: 14vh;
+  border-bottom: 1px solid rgb(151, 149, 149);
+}
+
 .skills{
   width: fit-content;
   margin: 0 auto;
@@ -25,6 +32,15 @@
   text-align: center;
 }
 
+.front_title_light{
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  font-size: 3.5rem;
+  position: relative;
+  text-align: center;
+}
+
+
 .back_title{
   position: absolute;
   color: rgba(112, 112, 112, 0.06);
@@ -39,6 +55,31 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+}
+
+.container_skills_light{
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.container_skills_light img{
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.container_skills_light div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(121, 107, 107);
+  transition: .6s;
+}
+
+.container_skills_light div:hover{
+  background-color: #8f81d4;
 }
 
 .container_skills img{
@@ -67,6 +108,10 @@
     border: none;
     min-height: 70vh;
   }
+  .container_Skills_light{
+    border: none;
+    min-height: 70vh;
+  }
 }
 
 @media screen and (max-width:600px){
@@ -92,11 +137,29 @@
   .container_skills div img{
     width: 100px;
   }
-
+  /* LIGHT */
+  .front_title_light{
+    font-size: 2.2rem;
+  }
+  .container_Skills_light{
+    padding: 30px;
+    border: none;
+    margin-bottom: 0;
+    min-height: 70vh;
+    margin-top: 4vh;
+  }
+  .container_skills_light{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .container_skills_light div img{
+    width: 100px;
+  }
 }
 
 @media screen and (max-width:405px){
-
   .front_title{
     font-size: 2rem;
   }
@@ -114,6 +177,28 @@
     gap: 10px;
   }
   .container_skills div img{
+    width: 80px;
+    min-height: 80px;
+    margin-bottom: 0px;
+  }
+  
+  .front_title_light{
+    font-size: 2rem;
+  }
+  .container_Skills_light{
+    padding: 30px;
+    border: none;
+    margin-bottom: 0;
+    height: 105vh;
+    margin-top: 4vh;
+  }
+  .container_skills_light{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .container_skills_light div img{
     width: 80px;
     min-height: 80px;
     margin-bottom: 0px;

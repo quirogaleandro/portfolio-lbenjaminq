@@ -20,7 +20,24 @@
   border-bottom: 1px solid white;
 }
 
+.container_projects_light{
+  margin-top: 14vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgb(151, 149, 149);
+}
+
 .container_projects h1{
+  color: white;
+  letter-spacing: 0.1rem;
+  margin-bottom: 10%;
+  font-family: 'Russo One', sans-serif;
+  position: relative;
+}
+
+.container_projects_light h1{
   color: white;
   letter-spacing: 0.1rem;
   margin-bottom: 10%;
@@ -31,6 +48,12 @@
 .front_title{
   z-index: 1;
   color: white;
+  font-size: 3.5rem;
+}
+
+.front_title_light{
+  z-index: 1;
+  color: rgb(0, 0, 0);
   font-size: 3.5rem;
 }
 
@@ -126,6 +149,9 @@
   .container_projects{
     border: none;
   }
+  .container_projects_light{
+    border: none;
+  }
   .container_cards{
     margin: 0px 0.5%;
     width: 100%;
@@ -153,6 +179,9 @@
   .front_title{
     font-size: 2.2rem;
   }
+  .front_title_light{
+    font-size: 2.2rem;
+  }
   .projects{
     width: 400px;
   }
@@ -160,6 +189,9 @@
 
 @media screen and (max-width:405px){
   .front_title{
+    font-size: 2rem;
+  }
+  .front_title_light{
     font-size: 2rem;
   }
   .projects{
@@ -170,17 +202,13 @@
   .front_title{
     font-size: 1.7rem;
   }
-  .projects{
-    width: 300px;
-  }
-}
-@media screen and (max-width:300px){
-  .front_title{
+  .front_title_light{
     font-size: 1.7rem;
   }
   .projects{
-    width: 280px;
+    width: 250px;
   }
+
 }
 
 

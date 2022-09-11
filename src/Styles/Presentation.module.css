@@ -19,6 +19,42 @@
   justify-content: center;
 }
 
+.container_light{
+  max-width: 1180px;
+  min-height: 86vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-left: 0.5%;
+  border-bottom: 1px solid rgb(151, 149, 149);
+}
+
+.subcontainer_light{
+  min-height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subcontainer_light h1{
+  font-size: 3.2rem;
+  line-height: 80%;
+  font-family: 'Russo One', sans-serif;
+  color: rgb(39, 36, 36);
+}
+
+.subcontainer_light h4{
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: rgb(52, 48, 48);
+}
+
+.subcontainer_light p{
+  font-size: 1rem;
+  color: rgb(52, 48, 48);
+  line-height: 115%;
+}
+
 .subcontainer span{
   font-size: 1.5rem;
   font-weight: normal;
@@ -86,16 +122,37 @@
     margin: 20px;
   }
   .subcontainer p{
-    margin: 20px;
+    margin: 20px 10%;
   }
   .profile{
     width: 300px;
     height: 300px;
   }
+  /* LIGHT */
+  .container_light{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subcontainer_light{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .subcontainer_light span{
+    margin: 20px;
+  }
+  .subcontainer_light p{
+    margin: 20px 10%;
+  }
 }
 
 @media screen and (max-width:500px){
   .subcontainer h1{
+    font-size: 2.4rem;
+  }
+  .subcontainer_light h1{
     font-size: 2.4rem;
   }
   .profile{
@@ -107,5 +164,7 @@
   .subcontainer h1{
     font-size: 1.9rem;
   }
-
+  .subcontainer_light h1{
+    font-size: 1.9rem;
+  }
 }
