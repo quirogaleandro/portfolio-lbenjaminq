@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "./Components/Navbar";
 import Presentation from "./Components/Presentation";
 import Projects from "./Components/Projects/Projects";
@@ -5,24 +6,22 @@ import Skills from "./Components/Skills";
 import Contact from "./Components/Contact.jsx";
 import Footer from "./Components/Footer";
 import style from "./Styles/App.module.css";
-import { useState } from "react";
-
 
 function App() {
   const body = document.body;
-  const [dark, setDark] = useState(()=>{
-    const mode = JSON.parse(window.localStorage.getItem('dark')) 
-    if(mode){
-      return mode
-    }else{
-      return false
+  const [dark, setDark] = useState(() => {
+    const mode = JSON.parse(window.localStorage.getItem("dark"));
+    if (mode) {
+      return mode;
+    } else {
+      return false;
     }
-  }); 
+  });
 
   const handleClick = (e) => {
     e.preventDefault();
     setDark(!dark);
-    window.localStorage.setItem('dark',JSON.stringify(!dark))
+    window.localStorage.setItem("dark", JSON.stringify(!dark));
   };
 
   if (!dark) {

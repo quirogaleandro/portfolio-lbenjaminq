@@ -2,8 +2,8 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Profile from "../Images/Profile.jpg";
 import SocialMedia from "./SocialMedia";
-import Dowload from "../Images/arrow.png";
 import style from "../Styles/Presentation.module.css";
+import Dowload from "../Images/arrow.png";
 
 const Presentation = ({ dark }) => {
   return (

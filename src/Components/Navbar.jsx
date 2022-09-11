@@ -1,9 +1,9 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import style from "../Styles/Navbar.module.css";
 import moon from "../Images/moon.png";
 import sun from "../Images/sun.png";
-import style from "../Styles/Navbar.module.css";
 
 function CollapsibleExample({ handleClick, dark }) {
   return (

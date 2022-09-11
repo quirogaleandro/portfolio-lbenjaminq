@@ -1,8 +1,8 @@
+import style from "../../Styles/Projects.module.css";
 import CountriesApp from "../../Images/CountriesApp.png";
 import B2B from "../../Images/B2BCommodities.png";
 import githubRepo from "../../Images/githubRepo.png";
 import web from "../../Images/web.png";
-import style from "../../Styles/Projects.module.css";
 
 function GroupExample() {
   return (

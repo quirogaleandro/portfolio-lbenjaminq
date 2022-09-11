@@ -1,11 +1,11 @@
 import React from "react";
 import github from "../Images/github.png";
 import linkedin from "../Images/linkedin.png";
-import s from "../Styles/SocialMedia.module.css";
+import style from "../Styles/SocialMedia.module.css";
 
 const SocialMedia = () => {
   return (
-    <div className={s.social}>
+    <div className={style.social}>
       <a href="https://github.com/lbenjaminq/" target="blank">
         <img src={github} alt="github" />
       </a>

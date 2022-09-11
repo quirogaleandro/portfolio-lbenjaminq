@@ -1,16 +1,15 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import style from "../Styles/Skills.module.css";
 import HTML from "../Images/Skills/HTML.png";
 import CSS from "../Images/Skills/CSS.png";
 import REACT from "../Images/Skills/REACT.png";
 import REDUX from "../Images/Skills/REDUX.png";
 import JS from "../Images/Skills/JS.png";
 import NODE from "../Images/Skills/NODE.png";
-import Bootstrap from "../Images/Skills/bootstrap.png";
+import BOOTSTRAP from "../Images/Skills/bootstrap.png";
 import EXPRESS from "../Images/Skills/expressjs-icon.svg";
 import SEQUELIZE from "../Images/Skills/SEQUELIZE.png";
-
-import style from "../Styles/Skills.module.css";
-import { Container } from "react-bootstrap";
 
 const Skills = ({ dark }) => {
   return (
@@ -44,7 +43,7 @@ const Skills = ({ dark }) => {
           <span>Javascript</span>
         </div>
         <div>
-          <img src={Bootstrap} alt="BOOTSTRAP" />
+          <img src={BOOTSTRAP} alt="BOOTSTRAP" />
           <span>Bootstrap</span>
         </div>
         <div>

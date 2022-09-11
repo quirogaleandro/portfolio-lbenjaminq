@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import style from "../Styles/Footer.module.css";
 import github from "../Images/github.png";
 import linkedin from "../Images/linkedin.png";
-import style from "../Styles/Footer.module.css";
 
 const Footer = () => {
   return (

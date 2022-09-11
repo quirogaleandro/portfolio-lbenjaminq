@@ -1,6 +1,6 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import style from "../../Styles/Projects.module.css";
+import { Container } from "react-bootstrap";
 import Cards from "./Cards";
 
 const Projects = ({ dark }) => {
