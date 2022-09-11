@@ -1,29 +1,36 @@
-import React from 'react'
-import HTML from '../Images/Skills/HTML.png'
-import CSS from '../Images/Skills/CSS.png'
-import REACT from '../Images/Skills/REACT.png'
-import REDUX from '../Images/Skills/REDUX.png'
-import JS from '../Images/Skills/JS.png'
-import NODE from '../Images/Skills/NODE.png'
-import Bootstrap from '../Images/Skills/bootstrap.png'
-import EXPRESS from '../Images/Skills/expressjs-icon.svg'
-import SEQUELIZE from '../Images/Skills/SEQUELIZE.png'
- 
-import style from '../Styles/Skills.module.css'
-import { Container } from 'react-bootstrap'
+import React from "react";
+import HTML from "../Images/Skills/HTML.png";
+import CSS from "../Images/Skills/CSS.png";
+import REACT from "../Images/Skills/REACT.png";
+import REDUX from "../Images/Skills/REDUX.png";
+import JS from "../Images/Skills/JS.png";
+import NODE from "../Images/Skills/NODE.png";
+import Bootstrap from "../Images/Skills/bootstrap.png";
+import EXPRESS from "../Images/Skills/expressjs-icon.svg";
+import SEQUELIZE from "../Images/Skills/SEQUELIZE.png";
 
-const Skills = ({dark}) => {
+import style from "../Styles/Skills.module.css";
+import { Container } from "react-bootstrap";
+
+const Skills = ({ dark }) => {
   return (
-    <Container id="Skills" className={dark ? style.container_Skills : style.container_Skills_light}>
+    <Container
+      id="Skills"
+      className={!dark ? style.container_Skills : style.container_Skills_light}
+    >
       <h1 className={style.skills}>
-        <span className={dark ? style.front_title : style.front_title_light}>
+        <span className={!dark ? style.front_title : style.front_title_light}>
           <span style={{ color: "rgb(82, 34, 193)" }}>TEC</span>NO
           <span style={{ color: "rgb(82, 34, 193)" }}>L</span>OGÍ
           <span style={{ color: "rgb(82, 34, 193)" }}>AS</span>
         </span>
         <span className={style.back_title}>SKILLS</span>
       </h1>
-      <div className={dark ? style.container_skills : style.container_skills_light}>
+      <div
+        className={
+          !dark ? style.container_skills : style.container_skills_light
+        }
+      >
         <div>
           <img src={HTML} alt="HTML" />
           <span>HTML</span>
@@ -63,6 +70,6 @@ const Skills = ({dark}) => {
       </div>
     </Container>
   );
-}
+};
 
-export default Skills
+export default Skills;

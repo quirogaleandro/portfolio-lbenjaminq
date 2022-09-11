@@ -1,14 +1,11 @@
-import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
-import okey from '../Images/okey.png'
-import style from '../Styles/SimpleForm.module.css'
-const {
-  REACT_APP_FORM
-} = process.env;
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import okey from "../Images/okey.png";
+import style from "../Styles/SimpleForm.module.css";
+const { REACT_APP_FORM } = process.env;
 
-
-function ContactForm({dark}) {
-  const [state, handleSubmit] = useForm('mwkzvrqy');
+function ContactForm({ dark }) {
+  const [state, handleSubmit] = useForm("mwkzvrqy");
 
   if (state.succeeded) {
     return (
@@ -22,14 +19,17 @@ function ContactForm({dark}) {
   return (
     <div id="Contacto" className={style.container_form}>
       <h1>
-        <span className={dark ? style.front_title : style.front_title_light}>
+        <span className={!dark ? style.front_title : style.front_title_light}>
           ME
           <span style={{ color: "rgb(82, 34, 193)" }}>DI</span>OS DE{" "}
           <span style={{ color: "rgb(82, 34, 193)" }}>CONTACTO</span>
         </span>
         <span className={style.back_title}>CONTACTO</span>
       </h1>
-      <form onSubmit={handleSubmit} className={dark ? style.form: style.form_light}>
+      <form
+        onSubmit={handleSubmit}
+        className={!dark ? style.form : style.form_light}
+      >
         <label htmlFor="email">Correo electrónico</label>
         <input id="email" type="email" name="email" />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -48,4 +48,4 @@ function ContactForm({dark}) {
   );
 }
 
-export default ContactForm
+export default ContactForm;

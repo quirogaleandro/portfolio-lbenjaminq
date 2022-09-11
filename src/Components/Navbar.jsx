@@ -13,7 +13,7 @@ function CollapsibleExample({ handleClick, dark }) {
       expand="lg"
       variant="dark"
       fixed="top"
-      style={{ background: "#0F0E0E",maxWidth:'1200px',margin:'auto' }}
+      style={{ background: "#0F0E0E", maxWidth: "1200px", margin: "auto" }}
     >
       <Container fluid="lg">
         <Navbar.Brand href="#Home">{"< Home />"}</Navbar.Brand>
@@ -29,15 +29,15 @@ function CollapsibleExample({ handleClick, dark }) {
             <Nav.Link style={{ color: "white" }} href="#Contacto">
               Contacto
             </Nav.Link>
-              {dark ? (
-                <button onClick={handleClick} className={style.mode_light}>
-                  <img src={sun} />
-                </button>
-              ) : (
-                <button onClick={handleClick} className={style.mode}>
-                  <img src={moon} />
-                </button>
-              )}
+            {dark ? (
+              <button onClick={handleClick} className={style.mode}>
+                <img src={moon} />
+              </button>
+            ) : (
+              <button onClick={handleClick} className={style.mode_light}>
+                <img src={sun} />
+              </button>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -174,6 +174,9 @@
 }
 
 @media screen and (max-width:400px){
+  .container_form{
+  min-height: 30vh;
+  }
   .front_title{
     font-size: 1.8rem;
   }
