@@ -18,7 +18,7 @@ const Presentation = ({ dark }) => {
           optimizadas.
         </p>
         <div className={style.cv_btn_container}>
-          <a href="https://drive.google.com/uc?export=download&id=1Z4DyJY0offdHulVzW-dqwQhq_IlZ8RCg5KDQ7E6pfPI">
+          <a href="https://drive.google.com/uc?export=download&id=1U5B8Ktj-C_sFnaMrWZ8TCvQ30uaMYhCP">
             <button className={style.cv_btn}>
               Descargar CV{" "}
               <img
