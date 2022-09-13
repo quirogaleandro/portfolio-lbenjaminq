@@ -7,7 +7,7 @@ Este proyecto fue hecho con estas tecnologías:
   -ReactJS
   -Bootstrap
   -Vercel
-
+<br></br>
 Podés encontrarme en:
 -LinkedIn: https://www.linkedin.com/in/leandro-quiroga/
 -Github: https://github.com/lbenjaminq
