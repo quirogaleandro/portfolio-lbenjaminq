@@ -1,13 +1,14 @@
-Bienvenidos a mi portafolio.
+# Bienvenidos a mi portafolio.
 
-Este proyecto fue hecho con estas tecnologías:
-  -HTML
-  -CSS
-  -Javascript
-  -ReactJS
-  -Bootstrap
-  -Vercel
+### Este proyecto fue hecho con estas tecnologías:
+  - HTML
+  - CSS
+  - Javascript
+  - ReactJS
+  - Bootstrap
+  - Vercel
+<br></br>
 
-Podés encontrarme en:
--LinkedIn: https://www.linkedin.com/in/leandro-quiroga/
--Github: https://github.com/lbenjaminq
+### Podés encontrarme en:
+- LinkedIn: https://www.linkedin.com/in/leandro-quiroga/
+- Github: https://github.com/lbenjaminq
