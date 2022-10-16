@@ -9,7 +9,7 @@ function GroupExample() {
     <section id="Proyectos" className={style.container_cards}>
       {projects.map((project) => (
         <div className={style.card_one} key={project.name}>
-          <a href="https://pi-countries-sigma.vercel.app/" target={"blank"}>
+          <a href={project.deploy} target={"blank"}>
             <img
               src={project.img}
               className={style.projects}
