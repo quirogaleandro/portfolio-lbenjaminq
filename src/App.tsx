@@ -1,16 +1,11 @@
-import { useState } from "react";
-import Navbar from "./Components/Navbar";
-import Presentation from "./Components/Presentation";
-import Projects from "./Components/Projects/Projects";
-import Skills from "./Components/Skills";
-import Contact from "./Components/Contact.jsx";
-import Footer from "./Components/Footer";
+import React, { useState } from "react";
 import style from "./Styles/App.module.css";
+import { ContactForm, Footer, NavbarComponent, Presentation, Projects, Skills } from "./Components";
 
 function App() {
   const body = document.body;
-  const [dark, setDark] = useState(() => {
-    const mode = JSON.parse(window.localStorage.getItem("dark"));
+  const [dark, setDark] = useState<boolean>(() => {
+    const mode = JSON.parse(window.localStorage.getItem("dark")as string) ;
     if (mode) {
       return mode;
     } else {
@@ -18,7 +13,7 @@ function App() {
     }
   });
 
-  const handleClick = (e) => {
+  const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     setDark(!dark);
     window.localStorage.setItem("dark", JSON.stringify(!dark));
@@ -34,12 +29,12 @@ function App() {
 
   return (
     <div>
-      <Navbar handleClick={handleClick} dark={dark} />
+      <NavbarComponent handleClick={handleClick} dark={dark} />
       <Presentation dark={dark} />
       <Projects dark={dark} />
       <Skills dark={dark} />
-      <Contact dark={dark} />
-      <Footer dark={dark} />
+      <ContactForm dark={dark} />
+      <Footer />
     </div>
   );
 }

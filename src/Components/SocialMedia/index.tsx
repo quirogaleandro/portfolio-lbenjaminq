@@ -1,9 +1,9 @@
 import React from "react";
-import github from "../Images/github.png";
-import linkedin from "../Images/linkedin.png";
-import style from "../Styles/SocialMedia.module.css";
+import github from "../../Images/github.png";
+import linkedin from "../../Images/linkedin.png";
+import style from "../../Styles/SocialMedia.module.css";
 
-const SocialMedia = () => {
+export const SocialMedia: React.FC<{}> = () => {
   return (
     <div className={style.social}>
       <a href="https://github.com/lbenjaminq/" target="blank">
@@ -19,4 +19,3 @@ const SocialMedia = () => {
   );
 };
 
-export default SocialMedia;

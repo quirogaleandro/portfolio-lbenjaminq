@@ -1,13 +1,14 @@
 import React from "react";
+import Profile from "../../Images/Profile.jpg";
+import Dowload from "../../Images/arrow.png";
 import { Container } from "react-bootstrap";
-import Profile from "../Images/Profile.jpg";
-import SocialMedia from "./SocialMedia";
-import style from "../Styles/Presentation.module.css";
-import Dowload from "../Images/arrow.png";
+import style from "../../Styles/Presentation.module.css";
+import { Dark } from "../../interface/dark.interface";
+import { SocialMedia } from "../SocialMedia";
 
-const Presentation = ({ dark }) => {
+export const Presentation: React.FC<Dark> = ({ dark }) => {
   return (
-    <Container className={!dark ? style.container : style.container_light}>
+    <Container className={!dark ? style.container : style.container_light} id="Home" >
       <div className={!dark ? style.subcontainer : style.subcontainer_light}>
         <h1>Leandro Quiroga</h1>
         <h4>Full stack developer</h4>
@@ -35,4 +36,3 @@ const Presentation = ({ dark }) => {
   );
 };
 
-export default Presentation;

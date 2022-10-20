@@ -1,0 +1,6 @@
+export { ContactForm } from "./Contact"
+export { Footer } from "./Footer"
+export { NavbarComponent } from "./Navbar"
+export { Presentation } from "./Presentation"
+export { Skills } from "./Skills"
+export { Cards, Projects } from "./Projects"

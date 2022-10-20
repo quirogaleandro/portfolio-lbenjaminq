@@ -3,7 +3,7 @@ import githubRepo from "../../Images/githubRepo.png";
 import web from "../../Images/web.png";
 import { projects } from "../../Projects";
 
-function GroupExample() {
+export const Cards: React.FC<{}>=() => {
 
   return (
     <section id="Proyectos" className={style.container_cards}>
@@ -32,4 +32,3 @@ function GroupExample() {
   );
 }
 
-export default GroupExample;

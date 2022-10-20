@@ -1,10 +1,10 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import style from "../Styles/Footer.module.css";
-import github from "../Images/github.png";
-import linkedin from "../Images/linkedin.png";
+import style from "../../Styles/Footer.module.css";
+import github from "../../Images/github.png";
+import linkedin from "../../Images/linkedin.png";
 
-const Footer = () => {
+export const Footer: React.FC<{}> = () => {
   return (
     <Container className={style.container_footer}>
       <h5>
@@ -25,4 +25,3 @@ const Footer = () => {
   );
 };
 
-export default Footer;

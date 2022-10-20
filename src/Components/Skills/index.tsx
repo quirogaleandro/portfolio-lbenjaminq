@@ -1,17 +1,18 @@
 import React from "react";
+import { Dark } from "../../interface/dark.interface";
 import { Container } from "react-bootstrap";
-import style from "../Styles/Skills.module.css";
-import HTML from "../Images/Skills/HTML.png";
-import CSS from "../Images/Skills/CSS.png";
-import REACT from "../Images/Skills/REACT.png";
-import REDUX from "../Images/Skills/REDUX.png";
-import JS from "../Images/Skills/JS.png";
-import NODE from "../Images/Skills/NODE.png";
-import BOOTSTRAP from "../Images/Skills/bootstrap.png";
-import EXPRESS from "../Images/Skills/expressjs-icon.svg";
-import SEQUELIZE from "../Images/Skills/SEQUELIZE.png";
+import style from "../../Styles/Skills.module.css";
+import HTML from "../../Images/Skills/HTML.png";
+import CSS from "../../Images/Skills/CSS.png";
+import REACT from "../../Images/Skills/REACT.png";
+import REDUX from "../../Images/Skills/REDUX.png";
+import JS from "../../Images/Skills/JS.png";
+import NODE from "../../Images/Skills/NODE.png";
+import BOOTSTRAP from "../../Images/Skills/bootstrap.png";
+import EXPRESS from "../../Images/Skills/expressjs-icon.svg";
+import SEQUELIZE from "../../Images/Skills/SEQUELIZE.png";
 
-const Skills = ({ dark }) => {
+export const Skills: React.FC<Dark> = ({ dark }) => {
   return (
     <Container
       id="Skills"
@@ -70,5 +71,3 @@ const Skills = ({ dark }) => {
     </Container>
   );
 };
-
-export default Skills;

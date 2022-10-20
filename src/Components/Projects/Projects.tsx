@@ -1,9 +1,10 @@
 import React from "react";
 import style from "../../Styles/Projects.module.css";
 import { Container } from "react-bootstrap";
-import Cards from "./Cards";
+import { Dark } from "../../interface/dark.interface";
+import { Cards } from "./Cards";
 
-const Projects = ({ dark }) => {
+export const Projects: React.FC<Dark> = ({ dark }) => {
   return (
     <Container
       id="Proyectos"
@@ -23,4 +24,3 @@ const Projects = ({ dark }) => {
   );
 };
 
-export default Projects;

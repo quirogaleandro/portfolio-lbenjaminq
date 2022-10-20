@@ -1,10 +1,10 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import style from "../Styles/SimpleForm.module.css";
-import okey from "../Images/okey.png";
-const { REACT_APP_FORM } = process.env;
+import style from "../../Styles/SimpleForm.module.css";
+import okey from "../../Images/okey.png";
+import { Dark } from "../../interface/dark.interface";
 
-function ContactForm({ dark }) {
+export const ContactForm: React.FC<Dark>=({ dark }) =>{
   const [state, handleSubmit] = useForm("mwkzvrqy");
 
   if (state.succeeded) {
@@ -48,4 +48,3 @@ function ContactForm({ dark }) {
   );
 }
 
-export default ContactForm;

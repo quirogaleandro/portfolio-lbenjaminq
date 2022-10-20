@@ -1,14 +1,13 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import style from "../Styles/Navbar.module.css";
-import moon from "../Images/moon.png";
-import sun from "../Images/sun.png";
+import React from "react"
+import style from "../../Styles/Navbar.module.css";
+import moon from "../../Images/moon.png";
+import sun from "../../Images/sun.png";
+import { Props } from "../../interface/dark.interface";
+import { Navbar, Nav, Container } from "react-bootstrap";
 
-function CollapsibleExample({ handleClick, dark }) {
+export const NavbarComponent: React.FC<Props>=({ handleClick, dark }) => {
   return (
     <Navbar
-      id="Home"
       collapseOnSelect
       expand="lg"
       variant="dark"
@@ -45,4 +44,3 @@ function CollapsibleExample({ handleClick, dark }) {
   );
 }
 
-export default CollapsibleExample;
