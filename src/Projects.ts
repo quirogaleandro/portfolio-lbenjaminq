@@ -27,7 +27,7 @@ export const projects = [
   },
   {
     name:"Tesla Clone",
-    overview:"Clon de Tesla hecho en React, hecho al 100% con Styled Components",
+    overview:"Clon de Tesla hecho en React, al 100% con Styled Components",
     link:"https://github.com/lbenjaminq/teslaClone",
     deploy:"https://tesla-clone-tau-snowy.vercel.app/",
     img:TeslaClone
