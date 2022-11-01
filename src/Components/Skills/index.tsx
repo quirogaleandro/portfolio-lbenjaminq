@@ -11,6 +11,10 @@ import NODE from "../../Images/Skills/NODE.png";
 import BOOTSTRAP from "../../Images/Skills/bootstrap.png";
 import EXPRESS from "../../Images/Skills/expressjs-icon.svg";
 import SEQUELIZE from "../../Images/Skills/SEQUELIZE.png";
+import TYPESCRIPT from "../../Images/Skills/typescript.png";
+import PostgreSQL from "../../Images/Skills/PostgreSQL.png";
+import MUI from "../../Images/Skills/MUI.png";
+import {SkillsMap} from '../../Skills'
 
 export const Skills: React.FC<Dark> = ({ dark }) => {
   return (
@@ -31,7 +35,15 @@ export const Skills: React.FC<Dark> = ({ dark }) => {
           !dark ? style.container_skills : style.container_skills_light
         }
       >
-        <div>
+        {
+          SkillsMap.map((skill)=>(
+            <div key={skill.label}>
+              <img src={skill.img} alt={skill.img} />
+              <span>{skill.label}</span>
+            </div>
+          ))
+        }
+        {/* <div>
           <img src={HTML} alt="HTML" />
           <span>HTML</span>
         </div>
@@ -67,6 +79,18 @@ export const Skills: React.FC<Dark> = ({ dark }) => {
           <img src={SEQUELIZE} alt="SEQUELIZE" />
           <span>Sequelize</span>
         </div>
+        <div>
+          <img src={TYPESCRIPT} alt="TYPESCRIPT" />
+          <span>Typescript</span>
+        </div>
+        <div>
+          <img src={PostgreSQL} alt="PostgreSQL" />
+          <span>PostgreSQL</span>
+        </div>
+        <div>
+          <img src={MUI} alt="MUI" />
+          <span>MUI</span>
+        </div> */}
       </div>
     </Container>
   );
