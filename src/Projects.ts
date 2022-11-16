@@ -3,6 +3,7 @@ import B2B from "./Images/B2BCommodities.png";
 import NetflixClone from "./Images/NetflixClone.jpg";
 import TeslaClone from "./Images/TeslaClone.jpg";
 import AppJuniorColaboration from "./Images/AppJuniorColaboration.png";
+import EcommerceTS from "./Images/EcommerceTS.png"
 
 export const projects = [
   {
@@ -43,5 +44,12 @@ export const projects = [
     link: "https://github.com/lbenjaminq/teslaClone",
     deploy: "https://tesla-clone-tau-snowy.vercel.app/",
     img: TeslaClone,
+  },
+  {
+    name: "Ecommerce 1.0",
+    overview: "Ecommerce hecho para practicar con Typescript, useContext y useReducer. Cuenta con un carrito para agregar productos.",
+    link: "https://github.com/lbenjaminq/ecommerce-ts",
+    deploy: "https://ecommerce-ts-theta.vercel.app/",
+    img: EcommerceTS,
   },
 ];
