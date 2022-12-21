@@ -4,6 +4,7 @@ import NetflixClone from "./Images/NetflixClone.jpg";
 import TeslaClone from "./Images/TeslaClone.jpg";
 import AppJuniorColaboration from "./Images/AppJuniorColaboration.png";
 import EcommerceTS from "./Images/EcommerceTS.png"
+import Ecommerce2TS from "./Images/Ecommerce2.0TS.png"
 
 export const projects = [
   {
@@ -51,5 +52,12 @@ export const projects = [
     link: "https://github.com/lbenjaminq/ecommerce-ts",
     deploy: "https://ecommerce-ts-theta.vercel.app/",
     img: EcommerceTS,
+  },
+  {
+    name: "Ecommerce 2.0",
+    overview: "Ecommerce hecho con Vite + React + TS. Auth con Firebase, login with Google, carrito de compras, filtrados y busquedas de productos",
+    link: "https://github.com/lbenjaminq/vitets-ecommerce",
+    deploy: "https://vitets-ecommerce-gumktnuu2-lbenjaminq.vercel.app/",
+    img: Ecommerce2TS,
   },
 ];

@@ -23,6 +23,7 @@ export const Presentation: React.FC<Dark> = ({ dark }) => {
             <button className={style.cv_btn}>
               Descargar CV{" "}
               <img
+                alt="img"
                 src={Dowload}
                 style={{ width: "25px", marginLeft: "0.5%" }}
               />
