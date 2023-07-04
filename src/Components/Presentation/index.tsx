@@ -19,7 +19,7 @@ export const Presentation: React.FC<Dark> = ({ dark }) => {
           optimizadas.
         </p>
         <div className={style.cv_btn_container}>
-          <a href="https://drive.google.com/uc?export=download&id=1U5B8Ktj-C_sFnaMrWZ8TCvQ30uaMYhCP">
+          <a href="https://drive.google.com/uc?export=download&id=1Tno7rywx09JPfWjp7Cae0qSYFxEt3w1i">
             <button className={style.cv_btn}>
               Descargar CV{" "}
               <img
