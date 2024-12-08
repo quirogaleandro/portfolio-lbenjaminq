@@ -83,7 +83,7 @@
   height: 380px;
   object-fit: cover;
   /* border: 2px solid red; */
-  border-radius: 50%;
+  border-radius: 20%;
 }
 .cv_btn_container{
   /* border: 2px solid red; */

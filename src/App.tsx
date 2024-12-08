@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import style from "./Styles/App.module.css";
 import { ContactForm, Footer, NavbarComponent, Presentation, Projects, Skills } from "./Components";
+import { Certifications } from "./Components/Certifications";
 
 function App() {
   const body = document.body;
@@ -31,6 +32,7 @@ function App() {
     <div>
       <NavbarComponent handleClick={handleClick} dark={dark} />
       <Presentation dark={dark} />
+      <Certifications dark={dark} />
       <Projects dark={dark} />
       <Skills dark={dark} />
       <ContactForm dark={dark} />

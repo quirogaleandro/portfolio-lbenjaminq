@@ -22,6 +22,9 @@ export const NavbarComponent: React.FC<Props>=({ handleClick, dark }) => {
             <Nav.Link style={{ color: "white" }} href="#Proyectos">
               Proyectos
             </Nav.Link>
+            <Nav.Link style={{ color: "white" }} href="#Certifications">
+              Certificaciones
+            </Nav.Link>
             <Nav.Link style={{ color: "white" }} href="#Skills">
               Skills
             </Nav.Link>
